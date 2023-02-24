@@ -34,7 +34,7 @@ public class Minimax {
         if (treeDepth >= ply || currentNode.gameBoard.totalLineNum == currentNode.gameBoard.maxLineNum) {
             return currentNode;
         }
-        // Determine whose turn it is: AI or not AI
+        // Determine whose turn it is: AI or human player's
         boolean isAITurn = treeDepth % 2 == 0;
         // Generate all the possible children nodes of the current node
         List<Node> children = possibleMoves(currentNode, isAITurn);
